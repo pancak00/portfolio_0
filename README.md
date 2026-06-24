@@ -25,8 +25,8 @@ A personal portfolio website showcasing software, hardware, and creative project
 
 1. Clone the repository:
 ```bash
-git clone <your-repo-url>
-cd Portfolio
+git clone https://github.com/pancak00/portfolio_0.git
+cd portfolio_0
 ```
 
 2. Install dependencies:
@@ -56,7 +56,7 @@ npm run preview
 ## Live Website
 
 
-🌐 **[Add your live website URL here]**
+🌐 **[https://portfolio-0-git-main-hsn00.vercel.app/](https://portfolio-0-git-main-hsn00.vercel.app/)**
 
 ## Screenshots
 
