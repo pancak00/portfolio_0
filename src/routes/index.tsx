@@ -9,12 +9,12 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Personal portfolio showcasing software, hardware, and creative projects — from clinic management systems to retro terminal apps.",
+          "A personal portfolio with software, hardware, and creative projects, from clinic management systems to retro terminal apps.",
       },
-      { property: "og:title", content: "Portfolio — Maker, Tinkerer, Developer" },
+      { property: "og:title", content: "Portfolio of a Maker, Tinkerer, and Developer" },
       {
         property: "og:description",
-        content: "Personal portfolio showcasing software, hardware, and creative projects.",
+        content: "A personal portfolio with software, hardware, and creative projects.",
       },
     ],
   }),
@@ -22,23 +22,23 @@ export const Route = createFileRoute("/")({
 });
 
 const skills = [
-  { name: "Hackintoshing", emoji: "🍎" },
-  { name: "Custom Keyboard Modding", emoji: "⌨️" },
-  { name: "Arduino & Embedded", emoji: "🔌" },
-  { name: "PC Building & Diagnosing", emoji: "🖥️" },
-  { name: "Disk Recovery", emoji: "💾" },
-  { name: "Cross-Platform Proficiency", emoji: "🔀" },
-  { name: "Hardware & Software Troubleshooting", emoji: "🔧" },
-  { name: "Software Development", emoji: "</>" },
-  { name: "PHP Programming", emoji: "🐘" },
-  { name: "C# Programming", emoji: "♯" },
-  { name: "C++ Programming", emoji: "➕" },
-  { name: "UI/UX Design", emoji: "🎨" },
-  { name: "Sound Design", emoji: "🎚️" },
-  { name: "Technical Writing", emoji: "📝" },
-  { name: "Photography", emoji: "📷" },
-  { name: "Songwriting", emoji: "🎼" },
-  { name: "Guitar Playing", emoji: "🎸" },
+  { name: "Hackintoshing" },
+  { name: "Custom Keyboard Modding" },
+  { name: "Arduino & Embedded" },
+  { name: "PC Building & Diagnosing" },
+  { name: "Disk Recovery" },
+  { name: "Cross-Platform Proficiency" },
+  { name: "Hardware & Software Troubleshooting" },
+  { name: "Software Development" },
+  { name: "PHP Programming" },
+  { name: "C# Programming" },
+  { name: "C++ Programming" },
+  { name: "UI/UX Design" },
+  { name: "Sound Design" },
+  { name: "Technical Writing" },
+  { name: "Photography" },
+  { name: "Songwriting" },
+  { name: "Guitar Playing" },
 ];
 
 const projects = [
@@ -46,16 +46,16 @@ const projects = [
     title: "RabiesResQ",
     tag: "Healthcare · Web App",
     blurb:
-      "A clinic management app that makes rabies care smoother and smarter. Tracks patients, flags urgent cases, and keeps vaccinations on schedule through a clean dashboard.",
+      "A clinic app that makes rabies care easier to handle. It tracks patients, flags urgent cases, and keeps vaccinations on schedule through a clean dashboard.",
     role: "QA Tester · Frontend · Tech Writer · Backend (a little)",
-    glyph: "🐕",
+    glyph: "⊕",
     link: "https://github.com/Ang3lito/RABIESRESQ",
   },
   {
     title: "Addit '87",
     tag: "Terminal · Diary App",
     blurb:
-      "A retro-styled terminal diary inspired by The Lake. Looks old-school on the outside, modern security under the hood.",
+      "A retro-style terminal diary inspired by The Lake. It looks old school on the outside, with modern security under the hood.",
     role: "Designer · Developer",
     glyph: "▌",
     link: "https://github.com/pancak00/addit-87",
@@ -64,15 +64,15 @@ const projects = [
     title: "Weather-Boi",
     tag: "Kotlin · CLI",
     blurb:
-      "A clean, aesthetic terminal weather dashboard. Real-time forecasts and a 3-day outlook rendered in a colored box with dynamic ASCII weather art.",
+      "A clean-looking terminal weather app. It shows real-time forecasts and a 3-day outlook in a colored box, with ASCII weather art that changes with the forecast.",
     role: "Solo build",
-    glyph: "☁",
+    glyph: "≈",
     link: "https://github.com/pancak00/weather_boi",
   },
   {
     title: "Retro Calculator",
     tag: "Web · Toy",
-    blurb: "A clean, retro-looking calculator that came straight from a VHS tape.",
+    blurb: "A clean, retro-look calculator that feels like it came straight from a VHS tape.",
     role: "Solo build",
     glyph: "▣",
     link: "https://github.com/pancak00/calc",
@@ -80,7 +80,7 @@ const projects = [
   {
     title: "Retro Tape Player",
     tag: "Web · Audio",
-    blurb: "A nostalgic tape-deck simulator with the warmth and wobble of analog playback.",
+    blurb: "A tape deck app that copies the warm, wobbly sound of an old cassette player.",
     role: "Solo build",
     glyph: "⊚",
     link: "https://pancak00.github.io/retrotapeplayer/",
@@ -89,7 +89,7 @@ const projects = [
 
 const stats: [string, string][] = [
   ["5+", "years tinkering"],
-  ["16", "disciplines"],
+  ["17", "skills"],
   ["∞", "rabbit holes"],
 ];
 
@@ -183,13 +183,6 @@ function Hero() {
     <section id="top" className="relative border-b border-border py-16 md:py-24">
       <div className="mx-auto grid max-w-6xl gap-12 px-6 md:grid-cols-12 md:items-center">
         <div className="md:col-span-7">
-          <div className="mb-6 inline-flex items-center gap-2 border border-brand px-3 py-1 animate-fade-in">
-            <span className="h-2 w-2 rounded-full bg-brand animate-pulse-dot" />
-            <span className="font-mono text-xs uppercase tracking-[0.1em] text-brand">
-              available for new projects · 2026
-            </span>
-          </div>
-
           <h1 className="font-display text-5xl font-semibold leading-[1.05] tracking-tight text-foreground sm:text-6xl md:text-7xl animate-fade-up">
             <span className="block">Maker of</span>
             <span className="block text-brand">curious things.</span>
@@ -199,8 +192,8 @@ function Hero() {
 
           <p className="mt-8 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg animate-fade-up delay-100">
             I build apps, mod keyboards, recover dead disks, design interfaces, and write songs on
-            the side. Equal parts engineer and tinkerer — happiest where code meets something you
-            can actually hold.
+            the side. I'm equal parts engineer and tinkerer, and I'm happiest when code turns into
+            something I can actually hold.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-3 animate-fade-up delay-200">
@@ -269,13 +262,13 @@ function About() {
         </div>
         <div className="md:col-span-8 space-y-6 text-muted-foreground leading-relaxed">
           <p className="text-lg">
-            I'm a generalist who genuinely likes the whole stack from soldering an Arduino sensor at
-            1 am to shipping a healthcare dashboard the next morning.
+            I like doing a bit of everything, from soldering an Arduino sensor at 1 am to shipping a
+            healthcare dashboard the next morning.
           </p>
           <p>
-            My favorite problems sit between disciplines: a calculator that thinks it lives inside a
-            VHS tape, a diary app dressed up like a 1987 terminal, a weather CLI that draws clouds
-            in ASCII. The work I'm proudest of feels like it has a personality.
+            My favorite projects mix different skills together: a calculator that thinks it lives
+            inside a VHS tape, a diary app dressed up like a 1987 terminal, a weather app that draws
+            clouds in ASCII. The work I like best always feels like it has its own personality.
           </p>
         </div>
       </div>
@@ -297,15 +290,9 @@ function Skills() {
           {skills.map((s) => (
             <li
               key={s.name}
-              className="group flex items-center justify-between gap-3 bg-card px-5 py-5 transition-colors hover:bg-brand-soft"
+              className="group flex items-center gap-3 bg-card px-5 py-5 transition-colors hover:bg-brand-soft"
             >
               <span className="text-sm font-medium leading-snug text-foreground">{s.name}</span>
-              <span
-                className="text-lg text-muted-foreground opacity-70 group-hover:opacity-100"
-                aria-hidden="true"
-              >
-                {s.emoji}
-              </span>
             </li>
           ))}
         </ul>
@@ -323,7 +310,7 @@ function Projects() {
             Selected work.
           </h2>
           <p className="mt-3 text-muted-foreground">
-            A mix of shipped products and weekend obsessions.
+            A mix of finished work and weekend side projects.
           </p>
         </div>
 
@@ -377,8 +364,8 @@ function Contact() {
           Got an idea worth tinkering on?
         </h2>
         <p className="mt-5 max-w-md mx-auto text-primary-foreground/85">
-          I'm open to freelance, collaborations, or just nerdy conversations about keyboards and
-          weird hardware.
+          I'm open to freelance work, team-ups, or just nerdy chats about keyboards and weird
+          hardware.
         </p>
         <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
           <a
@@ -426,7 +413,7 @@ function Footer() {
     <footer className="border-t border-border py-8">
       <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-4 px-6">
         <p className="text-xs text-muted-foreground">
-          © {new Date().getFullYear()} · handcrafted with sage green and stubbornness.
+          © {new Date().getFullYear()} · built with a lot of blue and a little stubbornness.
         </p>
         <span className="inline-flex items-center gap-2 text-xs text-muted-foreground">
           online
